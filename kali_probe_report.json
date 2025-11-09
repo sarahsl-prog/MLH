@@ -1,0 +1,101 @@
+{
+  "gets": [
+    {
+      "path": "/",
+      "url": "http://192.168.0.250:5000/",
+      "method": "GET",
+      "status": 404,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/mcp",
+      "url": "http://192.168.0.250:5000/mcp",
+      "method": "GET",
+      "status": 404,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/mcp/",
+      "url": "http://192.168.0.250:5000/mcp/",
+      "method": "GET",
+      "status": 404,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/mcp/commands",
+      "url": "http://192.168.0.250:5000/mcp/commands",
+      "method": "GET",
+      "status": 404,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/api",
+      "url": "http://192.168.0.250:5000/api",
+      "method": "GET",
+      "status": 404,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/api/mcp",
+      "url": "http://192.168.0.250:5000/api/mcp",
+      "method": "GET",
+      "status": 404,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/api/mcp/commands",
+      "url": "http://192.168.0.250:5000/api/mcp/commands",
+      "method": "GET",
+      "status": 404,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/commands",
+      "url": "http://192.168.0.250:5000/commands",
+      "method": "GET",
+      "status": 404,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/mcp/commands/ping",
+      "url": "http://192.168.0.250:5000/mcp/commands/ping",
+      "method": "GET",
+      "status": 404,
+      "content_type": "text/html; charset=utf-8"
+    }
+  ],
+  "posts": [
+    {
+      "path": "/mcp/commands",
+      "url": "http://192.168.0.250:5000/mcp/commands",
+      "method": "POST",
+      "status": 404,
+      "json": null,
+      "text_snippet": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try agai"
+    },
+    {
+      "path": "/api/mcp/commands",
+      "url": "http://192.168.0.250:5000/api/mcp/commands",
+      "method": "POST",
+      "status": 404,
+      "json": null,
+      "text_snippet": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try agai"
+    },
+    {
+      "path": "/commands",
+      "url": "http://192.168.0.250:5000/commands",
+      "method": "POST",
+      "status": 404,
+      "json": null,
+      "text_snippet": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try agai"
+    },
+    {
+      "path": "/mcp/commands/ping",
+      "url": "http://192.168.0.250:5000/mcp/commands/ping",
+      "method": "POST",
+      "status": 404,
+      "json": null,
+      "text_snippet": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try agai"
+    }
+  ]
+}
