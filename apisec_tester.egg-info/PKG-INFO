@@ -1,0 +1,72 @@
+Metadata-Version: 2.4
+Name: apisec-tester
+Version: 0.1.0
+Summary: Personal API Security Tester - lightweight API checks
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click>=8.1.7
+Requires-Dist: requests>=2.31.0
+Requires-Dist: loguru>=0.7.0
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Personal API Security Tester
+
+A small, fast tool to run lightweight security checks against your API endpoints and generate a short "report card." It's designed for developers to quickly validate their own projects for common misconfigurations and obvious vulnerabilities (authentication bypass, basic injection attempts, and simple rate-limit checks). This is not a replacement for a professional penetration test.
+
+Key goals
+- Fast, repeatable checks you can run locally or in CI
+- Clear, actionable report card for developers
+- Minimal configuration and dependencies
+
+What it does
+- Authentication checks: detects endpoints that accept unauthenticated requests where authentication is expected (based on user-supplied hints)
+- Injection attempts: sends lightweight payloads to detect common reflexive vulnerabilities (basic SQL/NoSQL/command injection patterns) without destructive actions
+- Rate limiting: issues controlled burst requests to determine whether endpoints enforce throttling
+- Report: generates a short JSON and human-readable summary showing pass/warn/fail for each check
+
+Quickstart (Windows cmd.exe)
+
+1. Create a virtual environment and install dependencies (when the project is scaffolded):
+
+```cmd
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+2. Run the tester against one or more endpoints (example CLI shown here; actual CLI may differ depending on implementation):
+
+```cmd
+python -m apisec_tester --endpoints https://api.example.com/login https://api.example.com/items --output report.json
+```
+
+Report
+- `report.json` — machine-readable summary with per-endpoint results and metadata
+- `report.txt` — optional human-friendly summary with a short "report card" and suggested next steps
+
+Security & legal
+- Only run this tool against systems you own or have explicit permission to test. Unauthorized testing is illegal and unethical.
+- The tool intentionally avoids destructive payloads; however, it still performs automated requests that could affect service availability. Use cautiously against production systems.
+
+Project layout (recommended)
+- `apisec_tester/` — package containing core checks, runners, and report generators
+- `cli.py` — CLI entrypoint (argparse or click)
+- `tests/` — unit tests for core logic
+- `requirements.txt` — pinned dependencies
+
+Contributing
+- Keep changes small and well-tested. Include unit tests for new checks.
+- When adding a check, include a non-destructive test case and update the example report.
+
+Next steps I can take
+- Scaffold a minimal package layout and a basic CLI
+- Add a couple of non-destructive example checks and unit tests
+- Add a `requirements.txt` with recommended packages (e.g., `requests`, `pytest`, `click`)
+
+Questions for you
+- Do you want a CLI based on `argparse` or `click`?
+- Should the initial checks include any project-specific rules (e.g., known auth endpoints, API key header names)?
