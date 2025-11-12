@@ -1,0 +1,15 @@
+screenshots/
+*.log
+.DS_Store
+node_modules/
+.env
+dist/
+build/
+.vscode/
+.venv/
+__pycache__/
+*.pyc
+*.bak
+.idea/  
+.pytest_cache/
+coverage/
