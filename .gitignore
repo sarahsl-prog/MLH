@@ -13,3 +13,10 @@ __pycache__/
 .idea/  
 .pytest_cache/
 coverage/
+site/
+*.egg-info/
+.mypy_cache/
+.cache/
+htmlcov/
+.tox/
+.ipynb_checkpoints/
