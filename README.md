@@ -47,11 +47,4 @@ Contributing
 - Keep changes small and well-tested. Include unit tests for new checks.
 - When adding a check, include a non-destructive test case and update the example report.
 
-Next steps I can take
-- Scaffold a minimal package layout and a basic CLI
-- Add a couple of non-destructive example checks and unit tests
-- Add a `requirements.txt` with recommended packages (e.g., `requests`, `pytest`, `click`)
 
-Questions for you
-- Do you want a CLI based on `argparse` or `click`?
-- Should the initial checks include any project-specific rules (e.g., known auth endpoints, API key header names)?
