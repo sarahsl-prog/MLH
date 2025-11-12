@@ -1,0 +1,14 @@
+site_name: Personal API Security Tester
+site_description: Lightweight tool to run quick API security checks and small Kali MCP integrations
+site_author: MLH
+docs_dir: docs
+site_dir: site
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - Testing: testing.md
+  - Integration: integration.md
+  - Development: development.md

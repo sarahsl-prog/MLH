@@ -1,5 +1,8 @@
+
 click==8.1.7
 requests==2.31.0
 loguru==0.7.0
 pytest==7.4.0
+mkdocs==1.7.1
+mkdocs-material==10.2.0
 flask==3.0.0

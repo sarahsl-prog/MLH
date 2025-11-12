@@ -242,6 +242,7 @@ We welcome contributions! Please see [CONTRIBUTING.md](docs/CONTRIBUTING.md) for
 
 [Add your license here]
 
+
 ## Disclaimer
 
 This tool is provided for educational and authorized security testing purposes only. The authors assume no liability for misuse or damage caused by this tool.
